@@ -6,7 +6,7 @@
     <title>Paws & Hearts - Pet Adoption</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Global Styles */
+       
         :root {
             --primary-color: #ff6b6b;
             --secondary-color: #4ecdc4;
@@ -30,7 +30,7 @@ body {
     background-size: auto, auto, 200px 200px;
 }
 
-        /* Side Navigation */
+       
         .sidenav {
             height: 100%;
             width: 0;
@@ -100,7 +100,7 @@ body {
             transform: scale(1.1);
         }
 
-        /* Header */
+     
         header {
             background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
             color: white;
@@ -160,7 +160,7 @@ body {
             background-color: var(--light-color);
         }
 
-        /* Main Content */
+  
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -229,7 +229,7 @@ section::after {
             border-radius: 2px;
         }
 
-        /* Features Section */
+      
         .features {
             display: flex;
             flex-wrap: wrap;
@@ -263,7 +263,7 @@ section::after {
             color: var(--dark-color);
         }
 
-        /* Pets Gallery */
+       
         .pets-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -345,7 +345,7 @@ section::after {
             background-color: #ff5252;
         }
 
-        /* Testimonials */
+        
         .testimonials {
             display: flex;
             flex-wrap: wrap;
@@ -410,7 +410,7 @@ section::after {
             font-size: 0.9rem;
         }
 
-        /* Contact Form */
+      
         .contact-form {
             max-width: 600px;
             margin: 0 auto;
@@ -475,7 +475,7 @@ section::after {
             box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
         }
 
-        /* Footer */
+      
         footer {
             background-color: var(--dark-color);
             color: white;
@@ -572,7 +572,7 @@ section::after {
             font-size: 0.9rem;
             opacity: 0.7;
         }
-/* FAQ Section */
+
 .faq-container {
     max-width: 800px;
     margin: 0 auto;
@@ -621,7 +621,7 @@ section::after {
     transform: rotate(45deg);
 }
 
-/* Donate Section */
+
 .donate-container {
     display: flex;
     flex-wrap: wrap;
@@ -698,7 +698,7 @@ section::after {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Section background variations */
+
 #about, #testimonials {
     background: rgba(255, 255, 255, 0.7);
     padding: 40px;
@@ -713,11 +713,11 @@ section::after {
     backdrop-filter: blur(5px);
 }
 
-/* Remove divider from last section */
+
 #donate::after {
     display: none;
 }
-/* Adoption Process Styles */
+
 .process-steps {
     position: relative;
     padding: 40px 0;
@@ -806,7 +806,7 @@ section::after {
     color: var(--dark-color);
 }
 
-/* Connector line for process steps */
+
 .process-container::before {
     content: '';
     position: absolute;
@@ -862,7 +862,7 @@ section::after {
         flex-direction: column;
     }
 }
-        /* Responsive Design */
+        
         @media (max-width: 768px) {
             h1 {
                 font-size: 2.2rem;
@@ -950,7 +950,7 @@ section::after {
     <i class="fas fa-bone"></i>
     <i class="fas fa-heart"></i>
 </div>
-    <!-- Side Navigation -->
+    <!--Navigation -->
     <div id="sidenav" class="sidenav">
         <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
         <a href="#home"><i class="fas fa-home"></i> Home</a>
@@ -963,7 +963,7 @@ section::after {
         <a href="#donate"><i class="fas fa-hand-holding-heart"></i> Donate</a>
     </div>
 
-    <!-- Navigation Toggle -->
+    
     <div class="nav-toggle" onclick="openNav()">
         <i class="fas fa-bars"></i>
     </div>
@@ -979,7 +979,7 @@ section::after {
 
     <!-- Main Content -->
     <div class="container">
-        <!-- About Section -->
+       
         <section id="about">
             <h2>Why Adopt With Us?</h2>
             <div class="features">
@@ -1351,7 +1351,7 @@ section::after {
     </footer>
 
     <script>
-        // Side Navigation Functions
+       
         function openNav() {
             document.getElementById("sidenav").style.width = "250px";
             document.body.style.overflow = "hidden";
@@ -1362,7 +1362,7 @@ section::after {
             document.body.style.overflow = "auto";
         }
 
-        // Close nav when clicking outside
+       
         document.addEventListener('click', function(event) {
             const sidenav = document.getElementById('sidenav');
             const navToggle = document.querySelector('.nav-toggle');
@@ -1374,12 +1374,12 @@ section::after {
             }
         });
 
-        // Smooth scrolling for anchor links
+      
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 
-                closeNav(); // Close mobile menu when a link is clicked
+                closeNav(); 
                 
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
@@ -1387,14 +1387,14 @@ section::after {
             });
         });
 
-        // Form submission
+        
         const form = document.querySelector('.contact-form');
         form.addEventListener('submit', function(e) {
             e.preventDefault();
             alert('Thank you for your message! We will get back to you soon.');
             form.reset();
         });
-        // Add floating pet icons
+        
 const floatingContainer = document.querySelector('.floating-pets');
 for (let i = 0; i < 15; i++) {
     const icons = ['paw', 'dog', 'cat', 'bone', 'heart', 'fish', 'crow'];
